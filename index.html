@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>首页</h1>
+
+<br>
+
+<a th:href="@{/targetTest}">访问目标页面</a>
+<!--<a th:href="@{/hello/targetTest}">访问目标页面2</a>-->
+
+<a th:href="@{/target}">访问目标页面：value属性1</a>
+<br>
+<a th:href="@{/testTarget}">访问目标页面：value属性2</a>
+<br>
+<form th:action="@{target}" method="get">
+    <input type="submit">
+</form>
+
+<br>
+
+<!--<a th:href="@{/testParams}">访问POJO</a>-->
+
+</body>
+</html>
